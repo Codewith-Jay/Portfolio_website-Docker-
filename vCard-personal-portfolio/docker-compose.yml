@@ -1,0 +1,16 @@
+version: '3.8'
+services:
+  frontend:
+    container_name: july3
+    build: D:/GettingStartedWithDevops/Docker/compose
+    ports : 
+      - "8080:80"
+
+  database:
+    container_name: new_db
+    image: mongo:latest
+    ports: 
+      - "27017:17017"
+
+
+
